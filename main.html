@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML and CSS Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+            font-size: large;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display:flex;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 5px;
+        }
+        figure{
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 4px;
+        }
+
+        section {
+            margin: 20px 0;
+            
+            font-size: large;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            
+            font-size: large;
+        }
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #081a27;
+        color: #ecf0f1;
+      }
+      tr:hover {
+        background-color: #0a3857;
+
+        color: #ddd;
+      }
+    aside {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            
+            font-size: x-large;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        fieldset {
+            border: 2px solid #0b0b0b;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            font-size: large;
+        }
+        form {
+            color: rgb(0, 0, 0);
+            max-width: 400px;
+            margin: 5px;
+            height: 80%;
+            width: 50%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.752);
+        }
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        label {
+            display: contents;
+        }
+        input[type="text"],
+        input[type="email"],input[type="org"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="submit"],
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <figure>
+            <img src="" width =400 px,height=300 px></a>
+        </figure>
+            <h1> Yashwanth</h1>
+        <p>address:23-12-4/6A,lalitha nagar,rajahmundry,AP,533105.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#aboutus">About</a>
+        <a href="#work">Work categories</a>
+        <a href="#details">Contact</a>
+        <a href="#location">Location</a>
+    </nav>
+
+    <section type="about" id="aboutus">
+        <article align="center">
+            <h2><u> About Us</u></h2>
+            <p> "Uranus Agency is a dynamic and innovative agency specializing in providing 
+                creative solutions for businesses of all sizes. With a team of talented 
+                professionals, we offer a range of services including branding, digital marketing, web development,
+                 and graphic design. Our goal is to help our clients stand out in the market and achieve their 
+                 business objectives through imaginative and effective solutions."</p>
+
+            <h3 align="center">Our Founder</h3>
+            <p>"Nova, the visionary leader at Uranus agency, 
+                is a seasoned explorer in the galaxy of marketing and design. 
+                With a passion for pushing creative boundaries, Galaxia founded 
+                Uranus Agency to offer clients innovative solutions that transcend the 
+                ordinary. His strategic vision and commitment to excellence have propelled 
+                Uranus agency to become a shining star in the industry."</p>
+            </section>            
+<section title="cat" id="work" >
+            <h3 align="center">Categories</h3>
+            <ol>
+                <li>Cat 1</li>
+                <li>Cat 2</li>
+                <li>Cat 3</li>
+            </ol>
+            
+            <h3><b>Price range based on work category</b></h3>
+            <table border="1">
+                <tr>
+                    <th>cat</th>
+                    <th>price range</th>
+                </tr>
+                <tr>
+                    <td>Cat 1</td>
+                    <td>100$ to 1000$</td>
+                </tr>
+                <tr>
+                    <td>Cat 2</td>
+                    <td>1000$ to 10k$</td>
+                </tr>
+                <tr>
+                    <td>Cat 3</td>
+                    <td>10k$ to 100k$</td>
+                </tr>
+            </table>
+        </section>
+        <section title="Contact" id="details">
+            <fieldset>
+                <legend><h3>submit your details</h3></legend>
+                <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="enter your name"required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"placeholder="enter your mail id" required>
+                <br>
+                <label for="org">Oraganisation:</label>
+                <input type="org" id="org" name="org" placeholder="Enter your organisation name" required>
+                <br>
+                <label >category required:</label>
+                <input type="radio" id="country1" name="radio-group" value="cat 1">
+                <label for="country">Cat 1</label>
+                <input type="radio" id="country2" name="radio-group" value="Cat 2">
+                <label for="country2">Cat 2</label>
+                <input type="radio" id="country3" name="radio-group" value="Cat 3">
+                <label for="country3">Cat 3</label>
+                <input type="submit" value="Submit">
+                </form>
+            </fieldset>
+        </section>
+        <aside >
+            <h3>Contact Us</h3>
+            <section title="address" id="location">
+                <address>
+                    <b>Uranus agency Headquarters ,</b>
+                    1234 Elm Street,
+                    Cityville,
+                    Stateville,
+                    12345,
+                    United States. 
+                    <br>
+                    Customer Care: <a href="tel">+1 (898) 123-4567</a>
+                    <b>Mail</b>:uranusagency@gmail.com
+                </address>
+            </section>
+        </aside>
+        <p><a href="#">Back to Top</a></p>
+        <footer>
+        &copy; 2024 Uranus Agency. All rights reserved.
+        </footer>
+
+</body>
+</html>
+
